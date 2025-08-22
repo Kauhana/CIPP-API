@@ -1,14 +1,14 @@
 name: PR Branch Check
 
 on:
-  # Using pull_request_target instead of pull_request for secure handling of fork PRs
-  pull_request_target:
-    # Only run on these PR events
-    types: [opened, synchronize, reopened]
+  # Using pull_request_target instead of pull_request for secure handling of fork PRs (Commented out per instructions: https://docs.cipp.app/setup/self-hosting-guide/configuring-automatic-updates)
+  #pull_request_target:
+   # # Only run on these PR events
+    #types: [opened, synchronize, reopened]
     # Only check PRs targeting these branches
-    branches:
-      - main
-      - master
+    #branches:
+    #  - main
+    #  - master
 
 permissions:
   pull-requests: write
